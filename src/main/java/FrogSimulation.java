@@ -18,7 +18,7 @@ public class FrogSimulation
 		/* to be implemented in part (a) */
 		int totaldist=0;
 		for(int i=0;i<maxHops;i++)
-			totaldist+=this.hopDistance();
+			totaldist+=hopDistance();
 		if(totaldist>=goalDistance)
 			return true;
 		return false;
@@ -29,7 +29,7 @@ public class FrogSimulation
 		/* to be implemented in part (b) */ 
 		double numsuccess=0;
 		for(int i=0;i<num;i++){
-			if(this.simulate()==true)
+			if(simulate()==true)
 				numsuccess++;
 		}
 		return numsuccess/num;
